@@ -61,7 +61,7 @@ The section below details my research on a follow-up hypothesis: "optimism accum
 - There is no post-closure reversal. If opens were optimism-inflated, Mondays should deflate; instead Monday has the *strongest* intraday returns of the week.
 - Gap return variance grows far slower than closed time - volatility accrues in trading time, independently rediscovering a result already reported in French & Roll (1986).
 - Venue comparison (same period): cash ETFs route 60-62% of returns through the overnight leg, futures 57-58% - the direction a market-structure story predicts, but small.
-- Crypto control test: BTC and ETH never close, yet split by the New York Stock Exchange's operating hours they show an even stronger overnight/intraday gap than equities and futures - 77%+ of BTC's weekday return accrues during US off-hours, and ETH's US-daytime leg is negative. Crypto also earns its normal off-hours rate straight through weekends, while index futures - which also on Sunday evenings - earn nothing.
+- Crypto control test: BTC and ETH never close, yet split by the New York Stock Exchange's operating hours they show an even stronger overnight/intraday gap than equities and futures - 77%+ of BTC's weekday return accrues during US off-hours, and ETH's US-daytime leg is negative. Crypto also earns its normal off-hours rate straight through weekends, while index futures - which also trade on Sunday evenings - earn nothing.
 
 ![Extensions](figures/fig_extensions.png)
 
