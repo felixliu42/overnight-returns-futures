@@ -55,7 +55,7 @@ The result lands between the original study's strong claim and a null: a real, s
 
 ## Extensions (exploratory): the premium follows the clock, not the closure
 
-The section below details my research on a follow-up hypothesis: "optimism accumulated while markets are closed inflates the open." This was formalized into falsifiable predictions and tested (`src/extensions_study.py`).  Every prediction failed, with the failures suggesting an interesting conclusion:
+The section below details my research on a follow-up hypothesis: "optimism accumulated while markets are closed inflates the open." This was formalized into falsifiable predictions and tested (`src/extensions_study.py`).  Every prediction failed, with the failures suggesting a separate hypothesis for potential follow-up research in the future.
 
 - Gap returns do not grow with closure time. The premium sits in ordinary weekday overnights (~17.5h closed, +5.5 bp); weekends (~65h) and long holiday closures carry approximately nothing. Per hour closed: 0.31 bp vs 0.02 bp.
 - There is no post-closure reversal. If opens were optimism-inflated, Mondays should deflate; instead Monday has the *strongest* intraday returns of the week.
@@ -65,7 +65,11 @@ The section below details my research on a follow-up hypothesis: "optimism accum
 
 ![Extensions](figures/fig_extensions.png)
 
-Taken together: closure-based explanations (building up optimism, locked-in risk compensation) are ruled out. The overnight premium is a property of the weekday clock - volatility lives inside the US trading day, returns accrue outside it. This applies to all venues tested in this study, which is an argument against any explanation that leans on equity-market structure alone. Derived legs data for all six instruments (SPY, QQQ, ES, NQ, BTC, ETH) is committed in `data/`, so these tables can be reproduced from a clone. Caveats: crypto sample is 2017-2026 with large drift and volatility; crypto "market open" was logged at 9:00 ET due to only having hourly bars, but an NQ 9:00-boundary check shows the half-hour shift is immaterial; ETF prices are adjusted series (dividend effects of ~1%/yr may smear across legs).
+Conclusion: closure-based explanations (building up optimism, locked-in risk compensation) are ruled out. The overnight premium is a property of the weekday clock - volatility lives inside the US trading day, returns accrue outside it. This applies to all venues tested in this study, which is an argument against any explanation that leans on equity-market structure alone. 
+
+Derived legs data for all six instruments (SPY, QQQ, ES, NQ, BTC, ETH) is committed in `data/`, so these tables can be reproduced from a clone. 
+
+Caveats: crypto sample is 2017-2026 with large drift and volatility; crypto "market open" was logged at 9:00 ET due to only having hourly bars, but an NQ 9:00-boundary check shows the half-hour shift is immaterial; ETF prices are adjusted series (dividend effects of ~1%/yr may smear across legs).
 
 ## Reproducing
 
